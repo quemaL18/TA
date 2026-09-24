@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<structure>
+  <type>re</type>
+  <automaton>
+    <state id="0" name="q0">
+      <x>100</x>
+      <y>100</y>
+      <initial/>
+    </state>
+    <state id="1" name="q1">
+      <x>400</x>
+      <y>100</y>
+      <final/>
+    </state>
+    <transition>
+      <from>0</from>
+      <to>1</to>
+      <read>(0+1)*010</read>
+    </transition>
+  </automaton>
+</structure>

@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<structure>
+  <type>grammar</type>
+  <grammar>
+    <start>S</start>
+    <production>
+      <left>S</left>
+      <right>0S</right>
+    </production>
+    <production>
+      <left>S</left>
+      <right>1S</right>
+    </production>
+    <production>
+      <left>S</left>
+      <right>0A</right>
+    </production>
+    <production>
+      <left>A</left>
+      <right>1B</right>
+    </production>
+    <production>
+      <left>B</left>
+      <right>0C</right>
+    </production>
+    <production>
+      <left>C</left>
+      <right/>
+    </production>
+  </grammar>
+</structure>
