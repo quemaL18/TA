@@ -137,3 +137,5 @@ L39 = { 0^n 1^m 2^n | n, m >= 0 }
 - JFLAP 7.1 (для открытия .jff файлов)
 
 Внешние библиотеки не требуются. Используются только стандартные модули Python: re, xml.etree.ElementTree, xml.dom.minidom.
+
+![ДКА для L13, построенный в JFLAP]https://raw.githubusercontent.com/quemaL18/TA/refs/heads/main/pr02/L13_DFA.jff.jpg
