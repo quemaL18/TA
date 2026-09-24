@@ -139,3 +139,10 @@ L39 = { 0^n 1^m 2^n | n, m >= 0 }
 Внешние библиотеки не требуются. Используются только стандартные модули Python: re, xml.etree.ElementTree, xml.dom.minidom.
 
 ![ДКА для L13, построенный в JFLAP](https://raw.githubusercontent.com/quemaL18/TA/refs/heads/main/pr02/L13_DFA.jff.jpg?raw=true)
+ДКА для L13
+
+![Регулярная грамматика для L13](https://raw.githubusercontent.com/quemaL18/TA/refs/heads/main/pr02/L13_Grammar.jff.jpg)
+Регулярная грамматика для L13
+
+![Регулярное выражение для L13](https://raw.githubusercontent.com/quemaL18/TA/refs/heads/main/pr02/L13_RE.jff.jpg)
+Регулярное выражение для L13
