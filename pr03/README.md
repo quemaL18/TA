@@ -169,8 +169,7 @@ S ⇒ aSc ⇒ aaScc ⇒ aaTcc ⇒ aabTccc ⇒ aabbTcccc ⇒ aabbcccc
 
 Ниже приведены все шаги моделирования и вывода в порядке выполнения. Некоторые изображения также показаны выше рядом с соответствующими объяснениями.
 
-<details>
-<summary>Все шаги: aab</summary>
+Все шаги: aab
 
 ![aab: pda_aab_step00.png](screenshots/pda_aab_step00.png)
 
@@ -186,10 +185,8 @@ S ⇒ aSc ⇒ aaScc ⇒ aaTcc ⇒ aabTccc ⇒ aabbTcccc ⇒ aabbcccc
 
 ![aab: pda_aab_step06.png](screenshots/pda_aab_step06.png)
 
-</details>
 
-<details>
-<summary>Все шаги: abb</summary>
+Все шаги: abb
 
 ![abb: pda_abb_step00.png](screenshots/pda_abb_step00.png)
 
@@ -205,10 +202,7 @@ S ⇒ aSc ⇒ aaScc ⇒ aaTcc ⇒ aabTccc ⇒ aabbTcccc ⇒ aabbcccc
 
 ![abb: pda_abb_step07.png](screenshots/pda_abb_step07.png)
 
-</details>
-
-<details>
-<summary>Все шаги: aabb</summary>
+Все шаги: aabb
 
 ![aabb: pda_aabb_step00.png](screenshots/pda_aabb_step00.png)
 
@@ -226,10 +220,7 @@ S ⇒ aSc ⇒ aaScc ⇒ aaTcc ⇒ aabTccc ⇒ aabbTcccc ⇒ aabbcccc
 
 ![aabb: pda_aabb_step07.png](screenshots/pda_aabb_step07.png)
 
-</details>
-
-<details>
-<summary>Все шаги: вывода грамматики</summary>
+Все шаги: вывода грамматики
 
 ![вывода грамматики: cfg_parse_step00.png](screenshots/cfg_parse_step00.png)
 
@@ -245,4 +236,3 @@ S ⇒ aSc ⇒ aaScc ⇒ aaTcc ⇒ aabTccc ⇒ aabbTcccc ⇒ aabbcccc
 
 ![вывода грамматики: cfg_parse_step06.png](screenshots/cfg_parse_step06.png)
 
-</details>
