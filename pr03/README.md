@@ -162,3 +162,86 @@ S ⇒ aSc ⇒ aaScc ⇒ aaTcc ⇒ aabTccc ⇒ aabbTcccc ⇒ aabbcccc
 - [L28_CFG.jff](L28_CFG.jff) — контекстно-свободная грамматика.
 - [screenshots/](screenshots/) — скриншоты пошагового распознавания и проверки грамматики в JFLAP 7.1.
 - README.md — описание, примеры распознавания и доказательство.
+
+
+### Полная последовательность снимков JFLAP
+
+Ниже приведены все шаги моделирования и вывода в порядке выполнения. Некоторые изображения также показаны выше рядом с соответствующими объяснениями.
+
+<details>
+<summary>Все шаги: aab</summary>
+
+![aab: pda_aab_step00.png](screenshots/pda_aab_step00.png)
+
+![aab: pda_aab_step01.png](screenshots/pda_aab_step01.png)
+
+![aab: pda_aab_step02.png](screenshots/pda_aab_step02.png)
+
+![aab: pda_aab_step03.png](screenshots/pda_aab_step03.png)
+
+![aab: pda_aab_step04.png](screenshots/pda_aab_step04.png)
+
+![aab: pda_aab_step05.png](screenshots/pda_aab_step05.png)
+
+![aab: pda_aab_step06.png](screenshots/pda_aab_step06.png)
+
+</details>
+
+<details>
+<summary>Все шаги: abb</summary>
+
+![abb: pda_abb_step00.png](screenshots/pda_abb_step00.png)
+
+![abb: pda_abb_step02.png](screenshots/pda_abb_step02.png)
+
+![abb: pda_abb_step03.png](screenshots/pda_abb_step03.png)
+
+![abb: pda_abb_step04.png](screenshots/pda_abb_step04.png)
+
+![abb: pda_abb_step05.png](screenshots/pda_abb_step05.png)
+
+![abb: pda_abb_step06.png](screenshots/pda_abb_step06.png)
+
+![abb: pda_abb_step07.png](screenshots/pda_abb_step07.png)
+
+</details>
+
+<details>
+<summary>Все шаги: aabb</summary>
+
+![aabb: pda_aabb_step00.png](screenshots/pda_aabb_step00.png)
+
+![aabb: pda_aabb_step01.png](screenshots/pda_aabb_step01.png)
+
+![aabb: pda_aabb_step02.png](screenshots/pda_aabb_step02.png)
+
+![aabb: pda_aabb_step03.png](screenshots/pda_aabb_step03.png)
+
+![aabb: pda_aabb_step04.png](screenshots/pda_aabb_step04.png)
+
+![aabb: pda_aabb_step05.png](screenshots/pda_aabb_step05.png)
+
+![aabb: pda_aabb_step06.png](screenshots/pda_aabb_step06.png)
+
+![aabb: pda_aabb_step07.png](screenshots/pda_aabb_step07.png)
+
+</details>
+
+<details>
+<summary>Все шаги: вывода грамматики</summary>
+
+![вывода грамматики: cfg_parse_step00.png](screenshots/cfg_parse_step00.png)
+
+![вывода грамматики: cfg_parse_step01.png](screenshots/cfg_parse_step01.png)
+
+![вывода грамматики: cfg_parse_step02.png](screenshots/cfg_parse_step02.png)
+
+![вывода грамматики: cfg_parse_step03.png](screenshots/cfg_parse_step03.png)
+
+![вывода грамматики: cfg_parse_step04.png](screenshots/cfg_parse_step04.png)
+
+![вывода грамматики: cfg_parse_step05.png](screenshots/cfg_parse_step05.png)
+
+![вывода грамматики: cfg_parse_step06.png](screenshots/cfg_parse_step06.png)
+
+</details>
