@@ -47,7 +47,11 @@ M = (Q, Σ, Γ, δ, q0, Z, F), где:
 
 **Цепочка aab — принимается (2 > 1):**
 
-[Пошаговые скриншоты aab](screenshots/pda_aab_step00.png) · [Промежуточное состояние](screenshots/pda_aab_step04.png) · [Завершение](screenshots/pda_aab_step06.png)
+![МПА: aab — начало](screenshots/pda_aab_step00.png)
+
+![МПА: aab — промежуточный шаг](screenshots/pda_aab_step04.png)
+
+![МПА: aab — завершение](screenshots/pda_aab_step06.png)
 
 ```text
 (q0, aab, Z)
@@ -60,7 +64,11 @@ M = (Q, Σ, Γ, δ, q0, Z, F), где:
 
 **Цепочка abb — принимается (1 < 2):**
 
-[Начало распознавания abb](screenshots/pda_abb_step00.png) · [Промежуточный шаг](screenshots/pda_abb_step05.png) · [Завершение](screenshots/pda_abb_step07.png)
+![МПА: abb — начало](screenshots/pda_abb_step00.png)
+
+![МПА: abb — промежуточный шаг](screenshots/pda_abb_step05.png)
+
+![МПА: abb — завершение](screenshots/pda_abb_step07.png)
 
 ```text
 (q0, abb, Z)
@@ -73,7 +81,11 @@ M = (Q, Σ, Γ, δ, q0, Z, F), где:
 
 **Цепочка aabb — отвергается (2 = 2):**
 
-[Начало распознавания aabb](screenshots/pda_aabb_step00.png) · [Промежуточный шаг](screenshots/pda_aabb_step05.png) · [Завершение](screenshots/pda_aabb_step07.png)
+![МПА: aabb — начало](screenshots/pda_aabb_step00.png)
+
+![МПА: aabb — промежуточный шаг](screenshots/pda_aabb_step05.png)
+
+![МПА: aabb — завершение](screenshots/pda_aabb_step07.png)
 
 ```text
 (q0, aabb, Z)
@@ -101,7 +113,13 @@ M = (Q, Σ, Γ, δ, q0, Z, F), где:
 
 **Вывод aabbcccc:**
 
-[Грамматика в JFLAP](screenshots/cfg_grammar.png) · [Начало вывода](screenshots/cfg_parse_step00.png) · [Промежуточный шаг](screenshots/cfg_parse_step03.png) · [Завершение вывода](screenshots/cfg_parse_step06.png)
+![КСГ в JFLAP](screenshots/cfg_grammar.png)
+
+![КСГ: начало вывода](screenshots/cfg_parse_step00.png)
+
+![КСГ: промежуточный шаг](screenshots/cfg_parse_step03.png)
+
+![КСГ: завершение вывода](screenshots/cfg_parse_step06.png)
 
 ```text
 S ⇒ aSc ⇒ aaScc ⇒ aaTcc ⇒ aabTccc ⇒ aabbTcccc ⇒ aabbcccc
@@ -118,7 +136,11 @@ S ⇒ aSc ⇒ aaScc ⇒ aaTcc ⇒ aabTccc ⇒ aabbTcccc ⇒ aabbcccc
 | aabbc | REJECT |
 | aabbbcc | REJECT |
 
-**Проверка грамматики в JFLAP:** [abcc — Accept](screenshots/cfg_abcc_accept.png) · [abc — Reject](screenshots/cfg_abc_reject.png).
+**Проверка грамматики в JFLAP:**
+
+![КСГ: abcc — Accept](screenshots/cfg_abcc_accept.png)
+
+![КСГ: abc — Reject](screenshots/cfg_abc_reject.png)
 
 ## 4. Доказательство, что L44 не является контекстно-свободным
 
