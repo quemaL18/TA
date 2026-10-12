@@ -47,6 +47,8 @@ M = (Q, Σ, Γ, δ, q0, Z, F), где:
 
 **Цепочка aab — принимается (2 > 1):**
 
+[Пошаговые скриншоты aab](screenshots/pda_aab_step00.png) · [Промежуточное состояние](screenshots/pda_aab_step04.png) · [Завершение](screenshots/pda_aab_step06.png)
+
 ```text
 (q0, aab, Z)
 → (q0, ab, AZ)
@@ -58,6 +60,8 @@ M = (Q, Σ, Γ, δ, q0, Z, F), где:
 
 **Цепочка abb — принимается (1 < 2):**
 
+[Начало распознавания abb](screenshots/pda_abb_step00.png) · [Промежуточный шаг](screenshots/pda_abb_step05.png) · [Завершение](screenshots/pda_abb_step07.png)
+
 ```text
 (q0, abb, Z)
 → (q0, bb, AZ)
@@ -68,6 +72,8 @@ M = (Q, Σ, Γ, δ, q0, Z, F), где:
 ```
 
 **Цепочка aabb — отвергается (2 = 2):**
+
+[Начало распознавания aabb](screenshots/pda_aabb_step00.png) · [Промежуточный шаг](screenshots/pda_aabb_step05.png) · [Завершение](screenshots/pda_aabb_step07.png)
 
 ```text
 (q0, aabb, Z)
@@ -95,6 +101,8 @@ M = (Q, Σ, Γ, δ, q0, Z, F), где:
 
 **Вывод aabbcccc:**
 
+[Грамматика в JFLAP](screenshots/cfg_grammar.png) · [Начало вывода](screenshots/cfg_parse_step00.png) · [Промежуточный шаг](screenshots/cfg_parse_step03.png) · [Завершение вывода](screenshots/cfg_parse_step06.png)
+
 ```text
 S ⇒ aSc ⇒ aaScc ⇒ aaTcc ⇒ aabTccc ⇒ aabbTcccc ⇒ aabbcccc
 ```
@@ -109,6 +117,8 @@ S ⇒ aSc ⇒ aaScc ⇒ aaTcc ⇒ aabTccc ⇒ aabbTcccc ⇒ aabbcccc
 | abc | REJECT |
 | aabbc | REJECT |
 | aabbbcc | REJECT |
+
+**Проверка грамматики в JFLAP:** [abcc — Accept](screenshots/cfg_abcc_accept.png) · [abc — Reject](screenshots/cfg_abc_reject.png).
 
 ## 4. Доказательство, что L44 не является контекстно-свободным
 
@@ -128,4 +138,5 @@ S ⇒ aSc ⇒ aaScc ⇒ aaTcc ⇒ aabTccc ⇒ aabbTcccc ⇒ aabbcccc
 
 - [L12_PDA.jff](L12_PDA.jff) — магазинный автомат.
 - [L28_CFG.jff](L28_CFG.jff) — контекстно-свободная грамматика.
+- [screenshots/](screenshots/) — скриншоты пошагового распознавания и проверки грамматики в JFLAP 7.1.
 - README.md — описание, примеры распознавания и доказательство.
