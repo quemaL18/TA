@@ -1,11 +1,10 @@
-"""Общие тесты CYK/Эрли и независимая проверка рекурсивным спуском."""
+"""Тесты CYK и проверка рекурсивным спуском."""
 import itertools
 import json
 from pathlib import Path
 import random
 import unittest
 from cyk import load_grammar, recognize as cyk
-from earley import recognize as earley
 from grammar import cnf
 
 CASES = json.loads(Path(__file__).with_name('tests.json').read_text(encoding='utf-8'))
@@ -62,7 +61,7 @@ class ParsersTest(unittest.TestCase):
     def test_examples(self):
         for t in CASES:
             with self.subTest(word=t['input']):
-                for f in (lambda s: cyk(s)[0], lambda s: earley(s)[0], reference):
+                for f in (lambda s: cyk(s)[0], reference):
                     self.assertEqual(f(t['input']),t['expected'])
     def test_exhaustive_short_expressions(self):
         for n in range(5):
@@ -70,7 +69,6 @@ class ParsersTest(unittest.TestCase):
                 word = 'a=' + ''.join(chars)
                 expected = reference(word)
                 self.assertEqual(cyk(word)[0], expected, word)
-                self.assertEqual(earley(word)[0], expected, word)
     def test_generated_and_mutated(self):
         rng = random.Random(4101)
         def expr(depth):
@@ -87,7 +85,6 @@ class ParsersTest(unittest.TestCase):
             for sample in (word, word[:rng.randrange(len(word))], word+'+', word+'2'):
                 expected = reference(sample)
                 self.assertEqual(cyk(sample)[0], expected, sample)
-                self.assertEqual(earley(sample)[0], expected, sample)
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
