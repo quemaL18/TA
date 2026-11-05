@@ -1,0 +1,162 @@
+[
+  {
+    "input": "a=101",
+    "expected": true,
+    "description": "Простое присваивание двоичного числа"
+  },
+  {
+    "input": "b=f",
+    "expected": true,
+    "description": "Присваивание переменной f"
+  },
+  {
+    "input": "c=a+1",
+    "expected": true,
+    "description": "Сложение"
+  },
+  {
+    "input": "d=10-b",
+    "expected": true,
+    "description": "Вычитание"
+  },
+  {
+    "input": "e=a*11",
+    "expected": true,
+    "description": "Умножение"
+  },
+  {
+    "input": "f=10/b",
+    "expected": true,
+    "description": "Деление"
+  },
+  {
+    "input": "a=-1",
+    "expected": true,
+    "description": "Унарный минус"
+  },
+  {
+    "input": "b=[a+1]*10",
+    "expected": true,
+    "description": "Скобки меняют порядок операций"
+  },
+  {
+    "input": "c=-[[a+1]*b]",
+    "expected": true,
+    "description": "Вложенные скобки и унарный минус"
+  },
+  {
+    "input": "d=a+b*10-1",
+    "expected": true,
+    "description": "Несколько операций разного приоритета"
+  },
+  {
+    "input": "a=102",
+    "expected": false,
+    "description": "Цифра 2 не принадлежит двоичному алфавиту"
+  },
+  {
+    "input": "g=1",
+    "expected": false,
+    "description": "Переменная g не входит в a–f"
+  },
+  {
+    "input": "a=1+",
+    "expected": false,
+    "description": "После плюса отсутствует операнд"
+  },
+  {
+    "input": "a=[1+b",
+    "expected": false,
+    "description": "Нет закрывающей скобки"
+  },
+  {
+    "input": "a=[]",
+    "expected": false,
+    "description": "Пустые скобки не являются выражением"
+  },
+  {
+    "input": "a=b=1",
+    "expected": false,
+    "description": "Повторное присваивание запрещено"
+  },
+  {
+    "input": "a=0001",
+    "expected": true,
+    "description": "Ведущие нули разрешены"
+  },
+  {
+    "input": "a=--1",
+    "expected": true,
+    "description": "Повторный унарный минус"
+  },
+  {
+    "input": "a=1--b",
+    "expected": true,
+    "description": "Вычитание отрицательного операнда"
+  },
+  {
+    "input": "a=1/0",
+    "expected": true,
+    "description": "Синтаксически верно; деление на ноль является семантической ошибкой"
+  },
+  {
+    "input": "a=+1",
+    "expected": false,
+    "description": "Унарный плюс не включён в язык"
+  },
+  {
+    "input": "a=1**b",
+    "expected": false,
+    "description": "Два знака умножения подряд"
+  },
+  {
+    "input": "a=1 0",
+    "expected": false,
+    "description": "Пробелы не входят в алфавит"
+  },
+  {
+    "input": "",
+    "expected": false,
+    "description": "Пустая строка"
+  },
+  {
+    "input": "a=",
+    "expected": false,
+    "description": "Нет правой части"
+  },
+  {
+    "input": "ab=1",
+    "expected": false,
+    "description": "Имя переменной должно состоять из одного символа"
+  },
+  {
+    "input": "a=1b",
+    "expected": false,
+    "description": "Между числом и переменной нет операции"
+  },
+  {
+    "input": "a=0",
+    "expected": true,
+    "description": "Нулевая константа"
+  },
+  {
+    "input": "a=1/10/11",
+    "expected": true,
+    "description": "Левая ассоциативность деления"
+  },
+  {
+    "input": "a=1-10-11",
+    "expected": true,
+    "description": "Левая ассоциативность вычитания"
+  },
+  {
+    "input": "a=1]",
+    "expected": false,
+    "description": "Лишняя закрывающая скобка"
+  },
+  {
+    "input": "a=01.1",
+    "expected": false,
+    "description": "Дробная запись запрещена"
+  }
+]

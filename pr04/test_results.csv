@@ -1,0 +1,33 @@
+input,expected,jflap_cyk,python_cyk,earley,description
+a=101,ACCEPT,ACCEPT,ACCEPT,ACCEPT,Простое присваивание двоичного числа
+b=f,ACCEPT,ACCEPT,ACCEPT,ACCEPT,Присваивание переменной f
+c=a+1,ACCEPT,ACCEPT,ACCEPT,ACCEPT,Сложение
+d=10-b,ACCEPT,ACCEPT,ACCEPT,ACCEPT,Вычитание
+e=a*11,ACCEPT,ACCEPT,ACCEPT,ACCEPT,Умножение
+f=10/b,ACCEPT,ACCEPT,ACCEPT,ACCEPT,Деление
+a=-1,ACCEPT,ACCEPT,ACCEPT,ACCEPT,Унарный минус
+b=[a+1]*10,ACCEPT,ACCEPT,ACCEPT,ACCEPT,Скобки меняют порядок операций
+c=-[[a+1]*b],ACCEPT,ACCEPT,ACCEPT,ACCEPT,Вложенные скобки и унарный минус
+d=a+b*10-1,ACCEPT,ACCEPT,ACCEPT,ACCEPT,Несколько операций разного приоритета
+a=102,REJECT,REJECT,REJECT,REJECT,Цифра 2 не принадлежит двоичному алфавиту
+g=1,REJECT,REJECT,REJECT,REJECT,Переменная g не входит в a–f
+a=1+,REJECT,REJECT,REJECT,REJECT,После плюса отсутствует операнд
+a=[1+b,REJECT,REJECT,REJECT,REJECT,Нет закрывающей скобки
+a=[],REJECT,REJECT,REJECT,REJECT,Пустые скобки не являются выражением
+a=b=1,REJECT,REJECT,REJECT,REJECT,Повторное присваивание запрещено
+a=0001,ACCEPT,ACCEPT,ACCEPT,ACCEPT,Ведущие нули разрешены
+a=--1,ACCEPT,ACCEPT,ACCEPT,ACCEPT,Повторный унарный минус
+a=1--b,ACCEPT,ACCEPT,ACCEPT,ACCEPT,Вычитание отрицательного операнда
+a=1/0,ACCEPT,ACCEPT,ACCEPT,ACCEPT,Синтаксически верно; деление на ноль является семантической ошибкой
+a=+1,REJECT,REJECT,REJECT,REJECT,Унарный плюс не включён в язык
+a=1**b,REJECT,REJECT,REJECT,REJECT,Два знака умножения подряд
+a=1 0,REJECT,REJECT,REJECT,REJECT,Пробелы не входят в алфавит
+,REJECT,REJECT,REJECT,REJECT,Пустая строка
+a=,REJECT,REJECT,REJECT,REJECT,Нет правой части
+ab=1,REJECT,REJECT,REJECT,REJECT,Имя переменной должно состоять из одного символа
+a=1b,REJECT,REJECT,REJECT,REJECT,Между числом и переменной нет операции
+a=0,ACCEPT,ACCEPT,ACCEPT,ACCEPT,Нулевая константа
+a=1/10/11,ACCEPT,ACCEPT,ACCEPT,ACCEPT,Левая ассоциативность деления
+a=1-10-11,ACCEPT,ACCEPT,ACCEPT,ACCEPT,Левая ассоциативность вычитания
+a=1],REJECT,REJECT,REJECT,REJECT,Лишняя закрывающая скобка
+a=01.1,REJECT,REJECT,REJECT,REJECT,Дробная запись запрещена
